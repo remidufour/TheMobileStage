@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width">
+    </head>
+    <body>
+        <center>
+        <table border="1" width="device-width" cellspacing="10">
+            <tr>
+                <td></td>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="LAUNCH">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="TRIGGER">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="START">
+                    </form>
+                </td>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="STOP">
+                    </form>
+                </td>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="RESUME">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="AR_CUT">
+                    </form>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <form method="get" action="/">
+                        <input type="submit" name="action" value="NOTIFY">
+                        <input type="text" name="msg" value="">
+                    </form>
+                </td>
+                <td></td>
+            </tr> 
+        </table>
+        <br><br><br>
+
+        <form method="link" action="/">
+            <input type="submit" value="Check Poll Results">
+        </form>
+        <br><br>
+
+        <img src="$pollResult$">
+        <form method="post" action="/">
+            <input type="hidden" name="pollResult" value="$pollTweet$">
+            <input type="submit" $waitingForResults$ name="action" value="TWEET">
+        </form>
+    </center>

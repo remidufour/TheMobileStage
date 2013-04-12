@@ -1,0 +1,32 @@
+<?XML VERSION="1.0" ENCODING="ISO-8859-1"?>
+<PLAY>
+	<TITLE>How to Die Digitally</TITLE>
+	<URL>http://www.montycmartin.com/2013/03/25/the-mobile-stage-presents-how-to-die-digitally/</URL>
+    <CHARACTERS>
+        <SELECTION>Please Pick a Character to Appear in Augmented Reality...</SELECTION>
+        <CHARACTER>
+            <NAME>Tallan</NAME>
+            <PICTURE>tallan.png</PICTURE>
+        </CHARACTER>
+        <CHARACTER>
+            <NAME>Montgomery</NAME>
+            <PICTURE>monty.png</PICTURE>
+        </CHARACTER>
+        <CHARACTER>
+            <NAME>Chrissi</NAME>
+            <PICTURE>chrissi.png</PICTURE>
+        </CHARACTER>
+    </CHARACTERS>
+    <EVENTS>
+        <EVENT TYPE="SELECT_CHARACTER" START_TRIGGER="MANUAL" END_TRIGGER="MANUAL"/>
+        <EVENT TYPE="POLL" START_TRIGGER="MANUAL" END_TRIGGER="MANUAL">
+            <QUESTION>How should the grandfather respond?</QUESTION>
+            <ANSWERS>
+                <ANSWER>Be angry!</ANSWER>
+                <ANSWER>Be happy!</ANSWER>
+                <ANSWER>Be indifferent!</ANSWER>
+            </ANSWERS>
+        </EVENT>
+        <EVENT TYPE="AR" START_TRIGGER="MANUAL" END_TRIGGER="MANUAL"/>
+    </EVENTS>
+</PLAY>

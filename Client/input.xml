@@ -1,0 +1,56 @@
+<?XML VERSION="1.0" ENCODING="ISO-8859-1"?>
+<PLAY>
+	<TITLE>How to Die Digitally</TITLE>
+	<URL>http://www.montycmartin.com/2013/03/25/the-mobile-stage-presents-how-to-die-digitally/</URL>
+    <CHARACTERS>
+        <SELECTION>Please Pick a Character to Appear in Augmented Reality...</SELECTION>
+        <CHARACTER>
+            <NAME>Tallan</NAME>
+            <PICTURE>tallan.png</PICTURE>
+        </CHARACTER>
+        <CHARACTER>
+            <NAME>Montgomery</NAME>
+            <PICTURE>monty.png</PICTURE>
+        </CHARACTER>
+        <CHARACTER>
+            <NAME>Chrissi</NAME>
+            <PICTURE>chrissi.png</PICTURE>
+        </CHARACTER>
+    </CHARACTERS>
+    <EVENTS>
+        <!-- Events have both a START_TRIGGER and END_TRIGGER trigger types. Setting these to MANUAL means that
+         that the server must send a trigger for the event to either start or end. Setting the START_TRIGGER to
+         AUTOMATIC means that the event will start automatically and that the XML expects a START tag. Setting
+         the END_TRIGGER to AUTOMATIC means that the event will end automatically and that the XML expects an
+         DELAY tag. The start and delay times are in seconds.
+         -->
+        <EVENT TYPE="SELECT_CHARACTER" START_TRIGGER="AUTOMATIC" END_TRIGGER="AUTOMATIC">
+            <START TIME="5"/>
+            <DELAY TIME="5"/>
+        </EVENT>
+        <EVENT TYPE="POLL" START_TRIGGER="AUTOMATIC" END_TRIGGER="AUTOMATIC">
+            <START TIME="5"/>
+            <DELAY TIME="5"/>
+            <QUESTION>How should the grandfather respond?</QUESTION>
+            <ANSWERS>
+                <ANSWER>Be angry!</ANSWER>
+                <ANSWER>Be happy!</ANSWER>
+                <ANSWER>Be indifferent!</ANSWER>
+            </ANSWERS>
+        </EVENT>
+        <EVENT TYPE="AR" START_TRIGGER="AUTOMATIC" END_TRIGGER="AUTOMATIC">
+            <MEDIA BLEND="0.5">ghost.mp4</MEDIA>
+            <START TIME="5"/>
+            <DELAY TIME="5"/>
+            <!-- Cuts either have an AUTOMATIC or MANUAL trigger. START represents the time at which the
+             prerecorded content start fading-in, in seconds. DELAY represents the length of time the
+             cut lasts for, in seconds. Fade-in and fade-out time are both set to half a second. For now,
+             the pre-recorded content doesn't synchronize with the cuts.
+             -->
+            <CUTS>
+                <CUT TRIGGER="MANUAL" START="0" DELAY="5"/>
+                <CUT TRIGGER="AUTOMATIC" START="5" DELAY="600"/>
+            </CUTS>
+        </EVENT>
+    </EVENTS>
+</PLAY>
