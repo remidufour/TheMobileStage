@@ -1,6 +1,7 @@
 # The Mobile Stage
 #
 # Custom protocol server for the mobile app clients
+# Created by Mike Dai Wang
 #
 # Copyright (C) 2013 Remi Dufour, Mike Dai Wang & Montgomery Martin
 #

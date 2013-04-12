@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #
 # Server written with Python and Twisted
+# Created by Mike Dai Wang
 #
 # Copyright (C) 2013 Remi Dufour, Mike Dai Wang & Montgomery Martin
 #
