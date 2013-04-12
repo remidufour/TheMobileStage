@@ -2,10 +2,9 @@
 //  NetworkController.m
 //
 //  Created by Mike Dai Wang on 2013-02-21.
-//  Copyright (c) 2013 Mike Dai Wang. All rights reserved.
 //
 //
-//  Copyright (C) 2013 Remi Dufour & Mike Dai Wang
+//  Copyright (C) 2013 Remi Dufour, Mike Dai Wang & Montgomery Martin
 //
 //  Permission is hereby granted, free of charge, to any person obtaining
 //  a copy of this software and associated documentation files (the
